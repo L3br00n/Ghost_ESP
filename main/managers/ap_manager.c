@@ -749,11 +749,11 @@ esp_err_t ap_manager_init(void) {
 
     const char *ssid = strlen(settings_get_ap_ssid(&G_Settings)) > 0
                            ? settings_get_ap_ssid(&G_Settings)
-                           : "GhostNet";
+                           : "191.168.4.1 Wifi";
 
     const char *password = strlen(settings_get_ap_password(&G_Settings)) > 8
                                ? settings_get_ap_password(&G_Settings)
-                               : "GhostNet";
+                               : "12122011";
 
     wifi_config_t wifi_config = {
         .ap =
